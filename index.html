@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="img/Logo_text.ico" type="image/x-icon" />
+    <title>Cowchain - Software and Blockchain Development</title>
+  </head>
+
+  <body>
+    <div class="wrapper" id="home">
+      <header class="header">
+        <div class="header__inner container">
+          <div class="header__main">
+            <a href="/" class="logo">
+              <img class="logo__image" src="img/logo.svg" alt="logo" />
+              <span class="logo__text">Cowchain</span>
+            </a>
+            <div class="header__burger"><span></span></div>
+          </div>
+          <div class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a onclick="route()" href="#services" class="header__link"
+                  >Services</a
+                >
+              </li>
+              <li class="header__item">
+                <a onclick="route()" href="#cases" class="header__link"
+                  >Cases</a
+                >
+              </li>
+              <li class="header__item">
+                <a onclick="route()" href="#team" class="header__link">Team</a>
+              </li>
+              <li class="header__item">
+                <a onclick="route()" href="#reviews" class="header__link"
+                  >Reviews</a
+                >
+              </li>
+              <li class="header__item">
+                <a onclick="route()" href="#contact" class="header__link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact">
+          <a href="#contact" class="contact__title">Contact Us</a>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <img
+                class="contact__img_letter"
+                src="img/icons/letter.svg"
+                alt="letter"
+              />
+              <a
+                href="mailto:ales@cowchain.io"
+                class="contact__text contact__text_email"
+                >sales@cowchain.io</a
+              >
+              <img
+                class="contact__img_copy"
+                src="img/icons/copy.svg"
+                alt="copy"
+              />
+            </li>
+            <li class="contact__item">
+              <img
+                class="contact__img_chat"
+                src="img/icons/chat.svg"
+                alt="chat"
+              />
+              <span class="contact__text">Chat us on Blockchain</span>
+            </li>
+            <li class="contact__item" id="request">
+              <img
+                class="contact__img_request"
+                src="img/icons/send_request.svg"
+                alt="request"
+              />
+              <span class="contact__text">Send Request</span>
+            </li>
+          </ul>
+        </div>
+        <div class="request">
+          <div class="request__inner">
+            <div class="request__title">Send Request</div>
+            <img class="request__img" src="img/icons/exit.svg" alt="exit" />
+            <input
+              placeholder="E-mail or Phone"
+              type="text"
+              class="request__input"
+            />
+            <button class="request__button">Send Request</button>
+          </div>
+        </div>
+      </header>
+      <div id="root">
+        <div class="main-wrapper">
+          <section class="main">
+            <div class="main__inner container">
+              <div class="fly-icon fly-icon_eth">
+                <div class="fly-icon__image">
+                  <img src="img/fly_icons/eth.svg" alt="eth" />
+                </div>
+              </div>
+              <div class="fly-icon fly-icon_binance">
+                <div class="fly-icon__image">
+                  <img src="img/fly_icons/binance.svg" alt="binance" />
+                </div>
+              </div>
+              <div class="fly-icon fly-icon_dollar">
+                <div class="fly-icon__image">
+                  <img src="img/fly_icons/dollar.svg" alt="dollar" />
+                </div>
+              </div>
+              <div class="fly-icon fly-icon_btc">
+                <div class="fly-icon__image">
+                  <img src="img/fly_icons/btc.svg" alt="btc" />
+                </div>
+              </div>
+              <div class="logo">
+                <img class="logo__img" src="img/logo.svg" alt="logo" />
+                <span class="logo__text">Cowchain</span>
+              </div>
+              <h1 class="main__title">
+                <span class="main__title_purple">Software and Blockchain</span>
+                development
+              </h1>
+              <a href="#contact" class="main__button">Contact Us</a>
+              <ul class="main__list">
+                <li class="main__item">
+                  <div class="main__number">15+</div>
+                  <div class="main__desc">technologies</div>
+                </li>
+                <li class="main__item">
+                  <div class="main__number">25+</div>
+                  <div class="main__desc">projects</div>
+                </li>
+                <li class="main__item">
+                  <div class="main__number">10+</div>
+                  <div class="main__desc">clients</div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="service" id="services">
+            <div class="service__inner container">
+              <div class="fly-icon fly-icon_cowchain1">
+                <div class="fly-icon__image">
+                  <img src="img/fly_icons/scarab.svg" alt="cowchain" />
+                </div>
+              </div>
+              <div class="fly-icon fly-icon_cowchain2">
+                <div class="fly-icon__image">
+                  <img src="img/fly_icons/scarab.svg" alt="cowchain" />
+                </div>
+              </div>
+              <div class="service__title title">Services</div>
+              <div class="service__content">
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service1.svg" alt="service" />
+                  </div>
+                  <div class="service__text">Blockchain & IT Consultancy</div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service2.svg" alt="service" />
+                  </div>
+                  <div class="service__text">
+                    Decentralized Application Development
+                  </div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service3.svg" alt="service" />
+                  </div>
+                  <div class="service__text">
+                    Fullstack Software development
+                  </div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service4.svg" alt="service" />
+                  </div>
+                  <div class="service__text">Smart Contract Development</div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service5.svg" alt="service" />
+                  </div>
+                  <div class="service__text">MVP<br />Development</div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service6.svg" alt="service" />
+                  </div>
+                  <div class="service__text">Back-end<br />Development</div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service7.svg" alt="service" />
+                  </div>
+                  <div class="service__text">NFT Project<br />Development</div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service8.svg" alt="service" />
+                  </div>
+                  <div class="service__text">Cloud solutions</div>
+                </div>
+                <div class="service__item">
+                  <div class="service__image">
+                    <img src="img/services/service9.svg" alt="service" />
+                  </div>
+                  <div class="service__text">Front-end<br />Development</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="case-wrapper">
+          <section class="cases" id="cases">
+            <div class="cases__inner container">
+              <div class="cases__blink cases__blink_1"></div>
+              <div class="cases__blink cases__blink_2"></div>
+              <div class="cases__blink cases__blink_3"></div>
+              <div class="cases__blink cases__blink_4"></div>
+              <div class="cases__head">
+                <div class="cases__title title">Cases</div>
+                <a href="/cases" onclick="route()" class="cases__show"
+                  >All cases</a
+                >
+              </div>
+              <div class="cases__content">
+                <div class="cases-item">
+                  <div class="cases-item__body">
+                    <div class="cases-item__title">Decentralized Exchange (DEX)</div>
+                    <div class="cases-item__tags">
+                      <div class="cases-item__tag">#React.js</div>
+                      <div class="cases-item__tag">#Solidity</div>
+                      <div class="cases-item__tag">#Subgraph</div>
+                      <div class="cases-item__tag">#StyledComponents</div>
+                      <div class="cases-item__tag">#GraphQL</div>
+                    </div>
+                    <div class="cases-item__text">
+                      Uniswap V2 based Decentralized Exchange on custom Avalanche Subnet Network.
+		      Allows users to swap tokens and fulfill pools and earn transaction fees.
+                    </div>
+                    <a
+                      href="/cases/1"
+                      onclick="route()"
+                      class="cases-item__button"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="cases-item__image">
+                    <img src="img/case/titles/case1.png" alt="cases" />
+                  </div>
+                </div>
+                <div class="cases-item">
+                  <div class="cases-item__body">
+                    <div class="cases-item__title">Staking & Lockdrop case</div>
+                    <div class="cases-item__tags">
+                      <div class="cases-item__tag">#TheGraph</div>
+                      <div class="cases-item__tag">#Solidity</div>
+                      <div class="cases-item__tag">#React</div>
+                      <div class="cases-item__tag">#Avalanche Subnet</div>
+                    </div>
+                    <div class="cases-item__text">
+                      Lockdrop is the mechanism that allows to lock as much as
+                      possible liquidity in decentralized exchanges by
+                      attracting people with LP tokens lock and immediate SPEX
+                      token rewards. Such mechanism allowed to braing 8M+$
+                      liquidity to the DEX in first 2 days
+                    </div>
+                    <a
+                      href="/cases/2"
+                      onclick="route()"
+                      class="cases-item__button"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="cases-item__image">
+                    <img src="img/case/titles/case2.png" alt="cases" />
+                  </div>
+                </div>
+                <div class="cases-item">
+                  <div class="cases-item__body">
+                    <div class="cases-item__title">NFT Marketplace</div>
+                    <div class="cases-item__tags">
+                      <div class="cases-item__tag">#TheGraph</div>
+                      <div class="cases-item__tag">#Solidity</div>
+                      <div class="cases-item__tag">#Node.js</div>
+                      <div class="cases-item__tag">#React</div>
+                      <div class="cases-item__tag">#MongoDB</div>
+                    </div>
+                    <div class="cases-item__text">
+                      Marketplace allows not only to create, mint, list
+                      and buy NFTs, but also make purchased, offers, auctions
+                      from another popular markets such as OpenSea, Looksrare,
+                      X2Y2.
+                    </div>
+                    <a
+                      href="/cases/3"
+                      onclick="route()"
+                      class="cases-item__button"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="cases-item__image">
+                    <img src="img/case/titles/case3.png" alt="cases" />
+                  </div>
+                </div>
+                <div class="cases-item">
+                  <div class="cases-item__body">
+                    <div class="cases-item__title">Play 2 Earn App Wallet</div>
+                    <div class="cases-item__tags">
+                      <div class="cases-item__tag">#React.js</div>
+                      <div class="cases-item__tag">#Solidity</div>
+                      <div class="cases-item__tag">#Subgraph</div>
+                      <div class="cases-item__tag">#.NET</div>
+                      <div class="cases-item__tag">#Avalanche Subnet</div>
+                    </div>
+                    <div class="cases-item__text">
+                      Assets marketplace, decentralized exchange, inventory
+                      management, coins management and custom user profile with
+                      unique fitness track records are also the features
+                      provided by the app.
+                    </div>
+                    <a
+                      href="/cases/4"
+                      onclick="route()"
+                      class="cases-item__button"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="cases-item__image">
+                    <img src="img/case/titles/case4.png" alt="cases" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tech" id="technologies">
+            <div class="tech__inner container">
+              <div class="tech__title title">Our Technology</div>
+              <div class="tech__cards">
+                <div class="tech-card">
+                  <div class="tech-card__head">
+                    <div class="tech-card__image">
+                      <img src="img/services/service1.svg" alt="Blockchain" />
+                    </div>
+                    <div class="tech-card__title">Blockchain</div>
+                  </div>
+                  <div class="tech-card__tags">
+                    <div class="tech-card__tag">#Ethereum</div>
+                    <div class="tech-card__tag">#Polygon</div>
+                    <div class="tech-card__tag">#Avalanche</div>
+                    <div class="tech-card__tag">#BSC</div>
+                    <div class="tech-card__tag">#TON</div>
+                    <div class="tech-card__tag">#web3</div>
+                    <div class="tech-card__tag">#ethers</div>
+                  </div>
+                  <div class="tech-card__desc">
+                    Web3 blockchain DApps development for any EVM based blockchains.
+		    Deep expertize in decentralized exchanges, nft collections, nft markteplaces, lending/borrowing.
+                  </div>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-card__head">
+                    <div class="tech-card__image">
+                      <img src="img/services/service9.svg" alt="Front-End" />
+                    </div>
+                    <div class="tech-card__title">Front-End</div>
+                  </div>
+                  <div class="tech-card__tags">
+                    <div class="tech-card__tag">#React.js</div>
+                    <div class="tech-card__tag">#Typescript</div>
+                    <div class="tech-card__tag">#Next.js</div>
+                  </div>
+                  <div class="tech-card__desc">
+                    Front-end development of any complexity for Fintech and Blockchain applications.
+                  </div>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-card__head">
+                    <div class="tech-card__image">
+                      <img src="img/services/service6.svg" alt="Back-End" />
+                    </div>
+                    <div class="tech-card__title">Back-End</div>
+                  </div>
+                  <div class="tech-card__tags">
+                    <div class="tech-card__tag">#nodeJS</div>
+                    <div class="tech-card__tag">#subgraph</div>
+                    <div class="tech-card__tag">#mongodb</div>
+                    <div class="tech-card__tag">#mssql</div>
+                    <div class="tech-card__tag">#postgresql</div>
+                  </div>
+                  <div class="tech-card__desc">
+                    Monolithic or microservice based architecture with any existing database.
+		    Subgraph data indexing for blockchain services.
+                  </div>
+                </div>
+                <div class="tech-card">
+                  <div class="tech-card__head">
+                    <div class="tech-card__image">
+                      <img src="img/services/service8.svg" alt="Cloud" />
+                    </div>
+                    <div class="tech-card__title">Cloud</div>
+                  </div>
+                  <div class="tech-card__tags">
+                    <div class="tech-card__tag">#azure</div>
+                    <div class="tech-card__tag">#aws</div>
+                    <div class="tech-card__tag">#gcp</div>
+                  </div>
+                  <div class="tech-card__desc">
+                    Event buses, microservices, analytics and serverless applications.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="team" id="team">
+            <div class="team__inner container">
+              <div class="team__blink team__blink_1"></div>
+              <div class="team__blink team__blink_2"></div>
+              <div class="team__blink team__blink_3"></div>
+              <div class="team__title title">Team</div>
+              <div class="team__slider swiper">
+                <div class="team__wrapper swiper-wrapper">
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/mykhailo.png" alt="Mykhailo" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Mykhailo Adzhoiev</div>
+                      <div class="team-member__position">Founder & CTO</div>
+                      <a
+                        href="https://www.linkedin.com/in/onchainmichael/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Oleh.png" alt="Oleh" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Oleh Shutiak</div>
+                      <div class="team-member__position">Development Lead</div>
+                      <a
+                        href="https://www.linkedin.com/in/oleh-shutiak-%F0%9F%87%BA%F0%9F%87%A6-92786b229/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Viacheslav.png" alt="Viacheslav" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Viacheslav Ivchenko</div>
+                      <div class="team-member__position">
+                        Blockchain Project Manager
+                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/%D0%B2%D1%8F%D1%87%D0%B5%D1%81%D0%BB%D0%B0%D0%B2-%D0%B8%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE-549988195/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Andrii.jpg" alt="Andrii" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Andii Hromadetskyi</div>
+                      <div class="team-member__position">
+                        Web3 Full-stack developer
+                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%B3%D1%80%D0%BE%D0%BC%D0%B0%D0%B4%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-1b26231b8/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Bohdan.png" alt="Bohdan" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Bohdan Solomakha</div>
+                      <div class="team-member__position">
+                        Web3 Full-stack developer
+                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/bohdan-solomakha-750a14240/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Nikita.jpg" alt="Nikita" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Nikita Chernega</div>
+                      <div class="team-member__position">
+                        Web3 & Solidity developer
+                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/nikita-chernega-225394210/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Vladyslav.png" alt="Vladyslav" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Vladyslav Fit</div>
+                      <div class="team-member__position">
+                        Full-stack developer
+                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/vladyslav-fit-a9b12120a/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Juri.png" alt="Juri" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Juri Ermakov</div>
+                      <div class="team-member__position">
+                        Full-stack developer
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Roman.png" alt="Roman" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Roman Kolomiiets</div>
+                      <div class="team-member__position">Sales Manager</div>
+                      <a
+                        href="https://www.linkedin.com/in/roman-kolomiiets/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Nadiia.jpg" alt="Nadiia" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Nadiia Nikiforova</div>
+                      <div class="team-member__position">UX/UI designer</div>
+                      <a
+                        href="https://www.linkedin.com/in/nikiforovanadya/"
+                        class="team-member__contact"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                  <div class="team-member swiper-slide">
+                    <img src="img/team/Ruslan.jpg" alt="Ruslan" />
+                    <div class="team-member__content">
+                      <div class="team-member__name">Ruslan</div>
+                      <div class="team-member__position">Marketing Analyst</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__navigation">
+                  <div class="team__pagination swiper-pagination"></div>
+                  <div class="team__button_prev swiper-button-prev"></div>
+                  <div class="team__button_next swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="review" id="reviews">
+          <div class="review__inner container">
+            <div class="fly-icon fly-icon_cowchain3">
+              <div class="fly-icon__image">
+                <img src="img/fly_icons/scarab.svg" alt="cowchain" />
+              </div>
+            </div>
+            <div class="fly-icon fly-icon_cowchain4">
+              <div class="fly-icon__image">
+                <img src="img/fly_icons/scarab.svg" alt="cowchain" />
+              </div>
+            </div>
+            <div class="review__title title">Reviews</div>
+            <div class="review__slider swiper">
+              <div class="review__wrapper swiper-wrapper">
+                <div class="review__item swiper-slide">
+                  <div class="review__text">
+                    Cowchain team having a deep expertise in DApp development.
+		    Very structured delivery flow. Enjoyed working process and result.
+                  </div>
+                  <div class="review__desc">
+                    <div class="review__image">
+                      <img src="img/review/review_4.jpg" alt="review" />
+                    </div>
+                    <div class="review__position">Jack Fibit, CEO</div>
+                  </div>
+                </div>
+                <div class="review__item swiper-slide">
+                  <div class="review__text">
+                    Great developer. I highly recommend his service to others.
+                  </div>
+                  <div class="review__desc">
+                    <div class="review__image">
+                      <img src="img/review/review_3.jpg" alt="review" />
+                    </div>
+                    <div class="review__position">
+                      Abigali S., Project Manager
+                    </div>
+                  </div>
+                </div>
+                <div class="review__item swiper-slide">
+                  <div class="review__text">
+                    Slava is a very professional and nice person to work with. I
+                    really enjoyed working with him. Thanks...
+                  </div>
+                  <div class="review__desc">
+                    <div class="review__image">
+                      <img src="img/review/review_2.jpg" alt="review" />
+                    </div>
+                    <div class="review__position">
+                      Devin Laka, General Manager
+                    </div>
+                  </div>
+                </div>
+                <div class="review__item swiper-slide">
+                  <div class="review__text">
+                    Mykhailo is a high-level specialist that has deep knowledge
+                    in blockchain as well as proven expertise in .NET
+                    development. He understands requirements clearly and can
+                    assist in system architecture development. Would recommend
+                    to anyone!
+                  </div>
+                  <div class="review__desc">
+                    <div class="review__image">
+                      <img src="img/review/review_1.jpeg" alt="review" />
+                    </div>
+                    <div class="review__position">
+                      Jason Cromwell, Lead Developer
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review__navigation">
+                <div class="review__pagination swiper-pagination"></div>
+                <div class="review__button_prev swiper-button-prev"></div>
+                <div class="review__button_next swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer" id="contact">
+          <div class="footer__inner container">
+            <div class="footer__blink footer__blink_1"></div>
+            <div class="footer-pages">
+              <div class="logo">
+                <img class="logo__image" src="img/logo.svg" alt="logo" />
+                <span class="logo__text">Cowchain</span>
+              </div>
+              <ul class="footer-pages__list">
+                <li class="footer-pages__item">
+                  <a
+                    onclick="route()"
+                    href="#services"
+                    class="footer-pages__link"
+                    >Services</a
+                  >
+                </li>
+                <li class="footer-pages__item">
+                  <a onclick="route()" href="#cases" class="footer-pages__link"
+                    >Cases</a
+                  >
+                </li>
+                <li class="footer-pages__item">
+                  <a href="#technologies" class="footer-pages__link"
+                    >Our Technologies</a
+                  >
+                </li>
+                <li class="footer-pages__item">
+                  <a onclick="route()" href="#team" class="footer-pages__link"
+                    >Team</a
+                  >
+                </li>
+                <li class="footer-pages__item">
+                  <a
+                    onclick="route()"
+                    href="#reviews"
+                    class="footer-pages__link"
+                    >Reviews</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="contact">
+              <div class="contact__title">Contact Us</div>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <img
+                    class="contact__img_letter"
+                    src="img/icons/letter.svg"
+                    alt="letter"
+                  />
+                  <a
+                    href="mailto:ales@cowchain.io"
+                    class="contact__text contact__text_email"
+                    >sales@cowchain.io</a
+                  >
+                  <img
+                    class="contact__img_copy"
+                    src="img/icons/copy.svg"
+                    alt="copy"
+                  />
+                  <img
+                    class="contact__img_copied"
+                    src="img/icons/copied.svg"
+                    alt="copied"
+                  />
+                </li>
+                <a
+                  href="https://chat.blockscan.com/index?a=0x68569f86473d0a686f40e94b79fd9a1e3254b8fe"
+                  class="contact__item"
+                >
+                  <img
+                    class="contact__img_chat"
+                    src="img/icons/chat.svg"
+                    alt="chat"
+                  />
+                  <span class="contact__text">Chat us on Blockchain</span>
+                </a>
+              </ul>
+              <form class="contact-form">
+                <input
+                  placeholder="E-mail or Phone"
+                  type="text"
+                  class="contact-form__input"
+                />
+                <button class="contact-form__button">Send Request</button>
+              </form>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

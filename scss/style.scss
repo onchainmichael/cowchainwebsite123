@@ -1,0 +1,77 @@
+@import "_nullable.scss";
+@import "_header.scss";
+@import "_fly_icon.scss";
+@import "_main.scss";
+@import "_service.scss";
+@import "_cases.scss";
+@import "_breadcrump.scss";
+@import "_case.scss";
+@import "_tech.scss";
+@import "_team.scss";
+@import "_review.scss";
+@import "_footer.scss";
+
+html,
+body {
+	width: 100%;
+}
+body {
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.container {
+	max-width: 1340px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	&_mini {
+		max-width: 890px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.logo {
+	font-weight: 800;
+	color: #ffffff;
+}
+.title {
+	font-family: $fontfamilyJBMono;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 52px;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 70px;
+	@media (max-width: 768px) {
+		font-size: 35px;
+		line-height: 52px;
+		margin-bottom: 40px;
+	}
+}
+
+.casses {
+	padding-top: 130px;
+	@media (max-width: 500px) {
+		padding-top: 90px;
+	}
+}
+.main-wrapper {
+	position: relative;
+	background: url("../img/main_bg.svg") top / cover no-repeat;
+}
+.case-wrapper {
+	background: url("../img/case-wrapper.svg") bottom / cover no-repeat;
+}
